@@ -1,0 +1,166 @@
+/*
+CSS File for Goto Grocery MRM Project
+Designed by : Faiz Syed Ibrahim, Aishwarya Kaggdas, Shifat Bin Rahman, Vishnuwardhan Gopal, Kai Ikeda 
+*/
+
+
+body {
+    margin: 0;
+    width:100%;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#whitelink {
+    text-decoration: none;
+    color: white;
+}
+
+#whitelink:visited {
+    color: white;
+}
+
+#header {
+    background-image: url("header.jpeg");
+    width: 100%;
+    height: 20rem;
+    top:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+#titleboxone {
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    background-color: #F4E8C1af;
+    text-align: center;
+    top: 0;
+    transform: translate(-1%, 90%);
+}
+
+#titleboxtwo {
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    background-color: #111111df;
+    text-align: center;
+    top: 0;
+    transform: translate(0%, 0%);
+}
+
+
+#titleheading {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    display: inline-block;
+    text-align: center;
+    transform: translateY(-60%);
+}
+
+#navbarbg {
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    background-color: #111111;
+    position: relative;
+}
+
+#navbartext {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color:#111;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color:#111;
+    text-align: center;
+    font-size: 2.5rem;
+    clear:both;
+}
+
+
+#homebody {
+    padding-left:4rem;
+    padding-right: 4rem;
+    padding-top: 0;
+    font-size: 1.5rem;
+}
+
+#homebodyp {
+    padding-left:4rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    font-size: 1.5rem;
+    max-width: 45%;
+    float:left;
+}
+
+#groceryimage {
+    padding-top: 2rem;
+    padding-left:1rem;
+    width: 40%;
+    float:right;
+    height: 50%;
+    padding-right: 4rem;
+    padding-bottom: 0rem;
+}
+
+.legendtext {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+fieldset {
+    padding : 5px ; margin: 15px;
+}
+
+legend {
+    text-indent: 0.5em; font-weight: bold; font-size: 115% ;
+}
+
+fieldset label {
+    margin: 0px 5px;
+}
+
+input,select {
+    font-size: 100%;
+}
+
+.button {
+    margin-left: 1.5rem;
+    font-weight: bold; padding: 15px; background-color: rgb(0,0,0); color: white;
+}
+
+footer {
+    clear:both;
+    background-color: #111111;
+    height: auto;
+    transform: translateY(50%);
+    padding: 2rem;
+}
+
+#footertext {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+
