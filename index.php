@@ -27,9 +27,9 @@
 
         <div id="navbarbg">
             <p id="navbartext">
-                <a id="whitelink" href="index.html"> Home &nbsp</a> | &nbsp
-                <a id="whitelink" href="addmember.html">Add Member</a> | &nbsp
-                <a id="whitelink" href="membersearchdelete.html">Member Search/Delete</a> 
+                <a id="whitelink" href="index.php"> Home &nbsp</a> | &nbsp
+                <a id="whitelink" href="addmember.php">Add Member</a> | &nbsp
+                <a id="whitelink" href="membersearchdelete.php">Member Search/Delete</a> 
             </p>
         </div>
 

@@ -27,17 +27,19 @@
 
         <div id="navbarbg">
             <p id="navbartext">
-                <a id="whitelink" href="index.html"> Home &nbsp</a> | &nbsp
-                <a id="whitelink" href="addmember.html">Add Member</a> | &nbsp
-                <a id="whitelink" href="membersearchdelete.html">Member Search/Delete</a> 
+                <a id="whitelink" href="index.php"> Home &nbsp</a> | &nbsp
+                <a id="whitelink" href="addmember.php">Add Member</a> | &nbsp
+                <a id="whitelink" href="membersearchdelete.php">Member Search/Delete</a> 
             </p>
         </div>
 
         <h2>Add Member Form</h2>
         
-        <form method="post">
+        <form action="includes/member.php" method="POST">
         <fieldset>
             <legend class="legendtext"> Personal Details &nbsp</legend>
+            <p><label for="Member_ID">Member ID</label>
+            <input type="text" name= "Member_ID" id="Member_ID" required="required" size="10" maxlength="5" pattern="\d{5}" /></p>
             <p><label for="First_Name">First Name</label>
             <input type="text" name= "First_Name" id="First_Name" required="required" maxlength="25" size="30" pattern="^[a-zA-Z ]+$"/> 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -63,9 +65,9 @@
             <input type="tel" name= "Phone_Number" id="Phone_Number" required="required" size="20" maxlength="10" pattern="\d{10}" placeholder="(##) ####-####" />
             </p>
             <p><label>Preferred Contact</label><br />
-            <input type="radio" name="Preferred Contact" value="Email" required="required" checked="checked" />Email
-            <input type="radio" name="Preferred Contact" value="Post" required="required" />Post
-            <input type="radio" name="Preferred Contact" value="Phone" required="required" />Phone
+            <input type="radio" name="Preferred_Contact" value="Email" required="required" checked="checked" />Email
+            <input type="radio" name="Preferred_Contact" value="Post" required="required" />Post
+            <input type="radio" name="Preferred_Contact" value="Phone" required="required" />Phone
         </fieldset>
 
         <p><input type="submit" value="Add Member" class="button" />
