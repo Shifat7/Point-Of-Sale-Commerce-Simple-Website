@@ -110,6 +110,16 @@
         }
     }
 
+    if(isset($_POST['Delete_Member'])){
+
+        $namevalue = $_POST['Name_Value'];
+
+        $query = "DELETE FROM gotogrom WHERE firstname = '$namevalue' OR lastname = '$namevalue'";
+
+        $result = mysqli_query($conn, $query);
+    }
+
+
 ?>
         <footer>
             <p id="footertext">
