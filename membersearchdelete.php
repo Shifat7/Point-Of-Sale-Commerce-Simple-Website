@@ -27,11 +27,11 @@
 
         <div id="navbarbg">
             <p id="navbartext">
-                <a id="whitelink" href="index.php"> Home &nbsp</a> | &nbsp
-                <a id="whitelink" href="addmember.php">Add Member</a> | &nbsp
-                <a id="whitelink" href="membersearchdelete.php">Member Search/Delete</a> | &nbsp
-                <a id="whitelink" href="addsalesrecord.html">Add Sales Record</a> | &nbsp
-                <a id="whitelink" href="salesrecordsearch.html">Sales Record Search</a>  
+                <a id="whitelink" href="index.php"> Home &nbsp;</a> | &nbsp;
+                <a id="whitelink" href="addmember.php">Add Member &nbsp;</a> | &nbsp;
+                <a id="whitelink" href="membersearchdelete.php">Member Search/Delete &nbsp;</a> | &nbsp;
+                <a id="whitelink" href="addsalesrecord.php">Add Sales Record &nbsp;</a> | &nbsp;
+                <a id="whitelink" href="salesrecordsearchdelete.php">Sales Record Search/Delete </a>  
             </p>
         </div>
 
@@ -125,7 +125,8 @@
 ?>
         <footer>
             <p id="footertext">
-                 <a id="whitelink">Faiz Syed Ibrahim 103146075</a> / <a id="whitelink">Aishwarya Kaggdas 103170236</a> / <a id="whitelink">Shifat Bin Rahman 103528424</a> <br/>
+                 <a id="whitelink">Faiz Syed Ibrahim 103146075</a> / <a id="whitelink">Aishwarya Kaggdas 103170236</a> / <a id="whitelink">Shifat Bin Rahman 103528424</a> 
+                 <br/>
                  <a id="whitelink">Vishnuwardhan Gopal 103174555</a> / <a id="whitelink">Kai Ikeda 103492189</a>
             </p>
         </footer>
