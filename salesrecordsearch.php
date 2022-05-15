@@ -59,10 +59,79 @@
         </fieldset>
 
 
-        <p><input type="submit" value="Search Sales Record" class="button" />
+        <p><input type="submit" name="Search_Sales" value="Search Sales Record" class="button" />
         <input type="reset" value="Clear" class="button"/></p>
 
         </form>
+<?php
+    include_once 'includes/dbs.php';
+
+    $conn = @mysqli_connect($dbServername,
+    $dbUsername,
+    $dbPassword,
+    $dbName
+    );
+
+    if(!$conn){
+    echo "<p>Database connection failure</p>";
+    }
+
+    if(isset($_POST['Search_Sales']))
+    {
+
+        $salesid = $_POST['Sales_ID'];
+        $memberid = $_POST['Member_ID'];
+        $purch_date = $_POST['Date'];
+        $purchday = $_POST['Day'];
+
+        $query = "SELECT sales_id, member_id, product_id, productname, quantity, unitprice, total, purch_date, purchday from gotogros 
+        WHERE sales_id  = '$salesid' AND
+        member_id = '$memberid' AND
+        purch_date = '$purch_date' AND
+        purchday = '$purchday' AND
+        ";
+
+        $result = mysqli_query($conn, $query);
+
+        
+        if(!$result) {
+            echo "<p>Something is wrong with ", $query, "</p>";
+        } else {
+        echo "<style>#member{
+            margin-left: auto; margin-right: auto; border-collapse: collapse; font-family: 'Source Sans Pro', sans-serif; width: 90%;
+                }</style>";
+        echo "<table id=\"member\" border=\"1\">\n";
+        echo "<tr>\n "
+          ."<th scope=\"col\">Sales ID</th>\n"
+          ."<th scope=\"col\">Member ID</th>\n"
+          ."<th scope=\"col\">Product ID</th>\n"
+          ."<th scope=\"col\">Product Name</th>\n"
+          ."<th scope=\"col\">Quantity</th>\n"
+          ."<th scope=\"col\">Unit Price</th>\n"
+          ."<th scope=\"col\">Total</th>\n"
+          ."<th scope=\"col\">Purchase Date</th>\n"
+          ."<th scope=\"col\">Purchase Day</th>\n"
+          ."</tr>\n ";
+          
+      while ($row = mysqli_fetch_assoc($result)){
+  
+          echo "<tr>\n ";
+          echo "<td>",$row["sales_id"],"</td>\n ";
+          echo "<td>",$row["member_id"],"</td>\n ";
+          echo "<td>",$row["product_id"],"</td>\n ";
+          echo "<td>",$row["productname"],"</td>\n ";
+          echo "<td>",$row["quantity"],"</td>\n ";
+          echo "<td>",$row["unitprice"],"</td>\n ";
+          echo "<td>",$row["total"],"</td>\n ";
+          echo "<td>",$row["purch_date"],"</td>\n ";
+          echo "<td>",$row["purchday"],"</td>\n ";
+          echo "</tr>\n ";
+      }
+      echo "</table>\n ";
+        }
+    }
+
+?>
 
         <footer>
             <p id="footertext">
