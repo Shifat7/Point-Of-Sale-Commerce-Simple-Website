@@ -11,6 +11,6 @@ while($row= mysqli_fetch_assoc($res)) {
 }
 $html.='</table>';
 header('Content-Type:application/xls');
-header('Content-Disposition:attachment;filename=monthlyreport.xls');
+header('Content-Disposition:attachment;filename=weeklyreport.xls');
 echo $html;
 ?>
