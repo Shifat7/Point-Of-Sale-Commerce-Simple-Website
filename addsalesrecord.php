@@ -59,12 +59,12 @@
             <label for="Product_Name">Product Name</label>
             <input type="text" name= "Product_Name" id="Product_Name" required="required" maxlength="20" size="20" pattern="^[a-zA-Z ]+$"/></p>
             <p><label for="Quantity">Quantity</label>
-            <input type="text" name= "Quantity" id="Quantity" required="required" size="10" maxlength="5" pattern="\d{5}" /></p>
+            <input type="text" name= "Quantity" id="Quantity" required="required" size="10" maxlength="5" pattern="\d{1-5}" /></p>
             <p><label for="Unit_Price">Unit Price</label>
-            <input type="text" name= "Unit_Price" id="Unit_Price" required="required" size="10" maxlength="5" pattern="\d{5}" />
+            <input type="text" name= "Unit_Price" id="Unit_Price" required="required" size="10" maxlength="5" pattern="\d{1-5}" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label for="Amount">Total Amount</label>
-            <input type="text" name= "Amount" id="Amount" required="required" size="10" maxlength="5" pattern="\d{5}" /></p>
+            <input type="text" name= "Amount" id="Amount" required="required" size="10" maxlength="5" pattern="\d{1-5}" /></p>
 
         </fieldset>
 

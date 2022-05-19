@@ -66,6 +66,20 @@
         </p>
 
         </form>
+
+
+
+        </form>
+        <form action="includes/export.php" method="POST">
+            <input type="submit" name="Export_Analyze" value="Download Sales Analysis" class="button" />
+        </form>
+
+
+
+        <p>
+        <a href="weeklysalesdataexport.php" target="_blank"><button class="button">Download Weekly Report Excel</button></a>
+        <a href="monthlysalesdataexport.php" target="_blank"><button class="button">Download Monthly Report Excel</button></a> 
+    </p>
 <?php
     include_once 'includes/dbs.php';
 
@@ -91,8 +105,7 @@
         WHERE sales_id  = '$salesid' AND
         member_id = '$memberid' AND
         purch_date = '$purch_date' AND
-        purchday = '$purchday' AND
-        ";
+        purchday = '$purchday'";
 
         $result = mysqli_query($conn, $query);
 
